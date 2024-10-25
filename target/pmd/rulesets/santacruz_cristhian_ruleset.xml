@@ -2,32 +2,39 @@
 <ruleset name="Cristhian Santacruz Rules"
     xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0
+    https://pmd.sourceforge.io/ruleset_2_0_0.xsd">
     
     <description>
         Code Inspection Lab, Cristhian Maickel Santacruz Gorozabel
     </description>
-
-    <!-- Regla de buenas prácticas, excluyendo SystemPrintln -->
-    <rule ref="category/java/bestpractices.xml/SystemPrintln">
+    
+    <rule ref="category/java/performance.xml"/>
+    
+    <rule ref="category/java/bestpractices.xml">
         <exclude name="SystemPrintln"/>
     </rule>
-
-    <!-- Regla de diseño: campos inmutables -->
+    
     <rule ref="category/java/design.xml/ImmutableField"/>
-
-    <!-- Regla de diseño: clases utilitarias -->
+    
     <rule ref="category/java/design.xml/UseUtilityClass">
         <priority>1</priority>
     </rule>
-
-    <!-- Reglas de documentación: comentarios requeridos pero ignorando ciertas propiedades -->
-    <rule ref="category/java/documentation.xml/CommentRequired">
-        <properties>
-            <property name="classCommentRequirement" value="ignored"/>
-            <property name="headerCommentRequirement" value="ignored"/>
-            <property name="fieldCommentRequirement" value="ignored"/>
-        </properties>
+    
+    <!-- New rules added -->
+    <rule ref="category/java/naming.xml/ClassNamingConventions"/>
+    
+    <rule ref="category/java/errorprone.xml/BeanMembersShouldSerialize">
+        <priority>2</priority>
     </rule>
     
+    <rule ref="category/java/errorprone.xml/UseLocaleWithCaseConversions"/>
+    
+    <rule ref="category/java/documentation.xml/CommentRequired">
+        <properties>
+            <property name="classCommentRequirement" value="Ignored"/>
+            <property name="headerCommentRequirement" value="Ignored"/>
+            <property name="fieldCommentRequirement" value="Ignored"/>
+        </properties>
+    </rule>
 </ruleset>
