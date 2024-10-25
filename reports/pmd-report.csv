@@ -1,0 +1,7 @@
+"Problem","Package","File","Priority","Line","Description","Rule set","Rule"
+"1","labcodeinspection","src/main/java/labcodeinspection/Email.java","3","5","ImmutableField: Field 'm_firstName' may be declared final","Design","ImmutableField"
+"2","labcodeinspection","src/main/java/labcodeinspection/Email.java","3","6","ImmutableField: Field 'm_lastName' may be declared final","Design","ImmutableField"
+"3","labcodeinspection","src/main/java/labcodeinspection/Email.java","3","7","RedundantFieldInitializer: Avoid using redundant field initializer for 'password'","Performance","RedundantFieldInitializer"
+"4","labcodeinspection","src/main/java/labcodeinspection/Email.java","3","9","ImmutableField: Field 'defaultpasswordLength' may be declared final","Design","ImmutableField"
+"5","labcodeinspection","src/main/java/labcodeinspection/Email.java","3","23","SwitchStmtsShouldHaveDefault: Switch statements should be exhaustive, add a default case (or missing enum branches)","Best Practices","SwitchStmtsShouldHaveDefault"
+"6","labcodeinspection","src/main/java/labcodeinspection/EmailApp.java","1","4","UseUtilityClass: This utility class has a non-private constructor","Design","UseUtilityClass"
