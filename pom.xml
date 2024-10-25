@@ -13,12 +13,13 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
-				<version>3.8.1</version> <!-- O la última versión -->
+				<version>3.8.1</version>
 				<configuration>
-					<source>11</source> <!-- Cambia esto a la versión de Java que necesites -->
-					<target>11</target> <!-- Cambia esto a la versión de Java que necesites -->
+					<source>17</source> <!-- Cambia a la versión que necesites -->
+					<target>17</target> <!-- Cambia a la versión que necesites -->
 				</configuration>
 			</plugin>
+			<!-- Mueve pluginManagement aquí si lo necesitas -->
 			<pluginManagement>
 				<plugins>
 					<plugin>
